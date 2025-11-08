@@ -1,0 +1,52 @@
+.contact-section {
+  background-color: #fff;
+}
+
+.contact-item .icon-box {
+  background-color: #d50000;
+  color: #fff;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.form-box {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+}
+
+.form-box .form-control {
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.send-btn {
+  background-color: #d50000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.send-btn:hover {
+  background-color: #b00000;
+}
+
+.map-container iframe {
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .contact-item {
+    flex-direction: column;
+  }
+
+  .contact-item .icon-box {
+    margin-bottom: 8px;
+  }
+}

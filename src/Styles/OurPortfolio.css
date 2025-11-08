@@ -1,0 +1,61 @@
+/* Section background and spacing */
+.portfolio-section {
+  background-color: #f5f6f7;
+  color: #111827;
+  text-align: center;
+}
+
+/* Heading */
+.portfolio-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0c1321;
+}
+
+/* Subtext */
+.portfolio-subtext {
+  max-width: 700px;
+  font-size: 1.05rem;
+  color: #4b5563;
+}
+
+/* Button */
+.portfolio-btn {
+  background-color: #e60012 !important;
+  border: none !important;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(230, 0, 18, 0.4);
+  transition: 0.3s ease;
+}
+
+.portfolio-btn:hover {
+  background-color: #c40010 !important;
+  box-shadow: 0 4px 14px rgba(230, 0, 18, 0.6);
+}
+
+/* No project message */
+.no-projects {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .portfolio-section h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-subtext {
+    font-size: 0.95rem;
+    padding: 0 15px;
+  }
+
+  .portfolio-btn {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,25 @@
+.bni-badge {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #DB0009; 
+  color: white;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 8px;
+  z-index: 9999; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 204px;
+  font-size: 13px;
+}
+
+.bni-badge img {
+  height: 24px;
+  width: auto;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}

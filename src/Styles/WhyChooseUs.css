@@ -1,0 +1,100 @@
+.why-choose-us {
+  overflow: hidden;
+}
+
+/* Each feature card */
+.feature-box {
+  position: relative;
+  padding: 70px 20px 30px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border-radius: 60px;
+}
+
+/* Pill background using pseudo element */
+.feature-box::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 45px;
+  gap: 20px;
+  transform: translateX(-50%) scale(0.9);
+  width: 400px;
+  height: 130px;
+  background: rgba(255, 0, 0, 0.08);
+  border-radius: 100px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+/* Red icon circle */
+.feature-box .icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #d50000;
+  color: #fff;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  z-index: 2;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(213, 0, 0, 0.15);
+}
+
+.feature-box .title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0b132b;
+  z-index: 2;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.feature-box .desc {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  z-index: 2;
+  position: relative;
+}
+
+/* Hover or Active */
+.feature-box:hover::before,
+.feature-box.active::before {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.feature-box:hover .title,
+.feature-box.active .title {
+  color: #d50000;
+}
+
+.feature-box:hover .icon,
+.feature-box.active .icon {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(213, 0, 0, 0.25);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .feature-box::before {
+    width: 340px;
+    height: 110px;
+  }
+
+  .feature-box {
+    padding: 60px 10px 25px;
+  }
+
+  .feature-box .icon {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+  }
+}
