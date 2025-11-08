@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "../Styles/Contactus.css";
 
-const ContactUs = () => {
+const Contactus = () => {
   return (
     <section id="contact" className="contact-section ms-5 p-5">
       <Container>
@@ -120,4 +120,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contactus;

@@ -10,7 +10,7 @@ import './Styles/Styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Bni from './Components/Bni.jsx';
 import OurPortfoliio from './Components/OurPortfoliio.jsx';
-import ContactUs from './Components/Contactus.jsx';
+import Contactus from './Components/Contactus.jsx';
 
 
 
@@ -23,7 +23,7 @@ function App() {
       <Services />
       <OurPortfoliio />
       <WhyChooseUs />
-      <ContactUs />
+      <Contactus />
       <Testimonials />
       <Footer />
       <Bni />
